@@ -14,14 +14,14 @@ export default function Home() {
     "options",
     "sous-options",
   ]
-  const [selected, setSelected] = useState([null, null, null, null, null]);
+  const [selected, setSelected] = useState<(number | null)[]>([null, null, null, null, null]);
   // État pour la modale d'ajout
   const [modal, setModal] = useState<{ open: boolean; parentID: number | null; parentDepth: number }>({ open: false, parentID: null, parentDepth: 0 });
   // États du formulaire
   const [form, setForm] = useState({ name: "", nameAr: "", priority: 1, tag: "" });
   const [loading, setLoading] = useState(false);
   // État pour la modale d'édition
-  const [editModal, setEditModal] = useState<{ open: boolean; option: any | null; colIdx: number }>({ open: false, option: null, colIdx: 0 });
+  const [editModal, setEditModal] = useState<{ open: boolean; option: { id: number; name: string; nameAr: string; priority: number; tag: string; depth: number; parentID: number | null } | null; colIdx: number }>({ open: false, option: null, colIdx: 0 });
   const [editForm, setEditForm] = useState({ name: "", nameAr: "", priority: 1, tag: "" });
   const [editLoading, setEditLoading] = useState(false);
 
@@ -35,7 +35,7 @@ export default function Home() {
   }, []);
 
   // Gestion du clic sur une option
-  const handleSelect = (colIdx: number, option: any) => {
+  const handleSelect = (colIdx: number, option: { id: number; name: string; nameAr: string; priority: number; tag: string; depth: number; parentID: number | null }) => {
     // Met à jour la sélection
     const newSelected = [...selected];
     newSelected[colIdx] = option.id;
@@ -105,7 +105,7 @@ export default function Home() {
   };
 
   // Ouvre la modale d'édition avec les données de l'option
-  const handleEditClick = (option: any, colIdx: number) => {
+  const handleEditClick = (option: { id: number; name: string; nameAr: string; priority: number; tag: string; depth: number; parentID: number | null }, colIdx: number) => {
     setEditModal({ open: true, option, colIdx });
     setEditForm({
       name: option.name || "",
@@ -170,7 +170,7 @@ export default function Home() {
               {colData.length === 0 ? (
                 <div className="text-gray-400 text-center">Aucune donnée</div>
               ) : (
-                colData.map((option: any) => (
+                colData.map((option: { id: number; name: string; nameAr: string; priority: number; tag: string; depth: number; parentID: number | null }) => (
                   <div
                     key={option.id}
                     className={`flex items-center justify-between px-2 py-1 rounded cursor-pointer transition-colors ${selected[colIdx] === option.id ? "bg-blue-100 text-blue-700" : "hover:bg-gray-100"}`}
@@ -259,7 +259,7 @@ export default function Home() {
         <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg p-6 min-w-[320px] relative">
             <button className="absolute top-2 right-2 text-gray-400 hover:text-gray-700 text-xl" onClick={() => setEditModal({ open: false, option: null, colIdx: 0 })}>&times;</button>
-            <h3 className="text-lg font-semibold mb-4">Actualiser l'option</h3>
+            <h3 className="text-lg font-semibold mb-4">Actualiser l&apos;option</h3>
             <form onSubmit={handleEditSubmit} className="flex flex-col gap-3">
               <input
                 className="border rounded px-2 py-1"

@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
     }
     db.close();
     return NextResponse.json(rows);
-  } catch (error) {
+  } catch {
     return new NextResponse('Erreur serveur', { status: 500 });
   }
 }
@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
     const option = db.prepare('SELECT * FROM options WHERE id = ?').get(result.lastInsertRowid);
     db.close();
     return NextResponse.json(option, { status: 201 });
-  } catch (error) {
+  } catch {
     return new NextResponse('Erreur serveur', { status: 500 });
   }
 }

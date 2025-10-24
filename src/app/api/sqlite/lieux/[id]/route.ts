@@ -18,7 +18,7 @@ export async function PUT(request: NextRequest, { params }: { params: Promise<{ 
     const option = db.prepare('SELECT * FROM options WHERE id = ?').get(idNum);
     db.close();
     return NextResponse.json(option, { status: 200 });
-  } catch (error) {
+  } catch {
     return new NextResponse('Erreur serveur', { status: 500 });
   }
 }
