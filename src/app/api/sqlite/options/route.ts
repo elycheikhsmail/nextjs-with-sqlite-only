@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Database from 'better-sqlite3';
+// utilser getStaticPaths pour precharger les options
 
 export async function GET(request: NextRequest) {
   try {
@@ -19,6 +20,14 @@ export async function GET(request: NextRequest) {
   } catch {
     return new NextResponse('Erreur serveur', { status: 500 });
   }
+}
+
+export async function generateStaticParams() {
+  const params = [];
+  for (let i = 1; i <= 31; i++) {
+    params.push({ parentId: i.toString() });
+  }
+  return params;
 }
 
 export async function POST(request: NextRequest) {
