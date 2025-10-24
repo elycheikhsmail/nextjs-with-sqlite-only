@@ -1,0 +1,8 @@
+# options db
+TURSO_AUTH_TOKEN_OPTIONS=token
+TURSO_DATABASE_URL_OPTIONS=libsql://db-xyz.aws-eu-west-1.turso.io
+# lieux db
+TURSO_AUTH_TOKEN_LIEUX=token
+TURSO_DATABASE_URL_LIEUX=libsql://db-xyz.aws-eu-west-1.turso.io
+ 
+
