@@ -2,7 +2,8 @@
 import { useEffect, useState } from "react";
 import { FaSyncAlt } from "react-icons/fa";
 
-const baseApi = "/api/sqlite/"; 
+let baseApi = "/api/sqlite/"; 
+ baseApi = "/api/json/"; 
 export default function Home() {
   // États pour les données et sélections de chaque colonne
   const [columns, setColumns] = useState([[], [], [], [], []]);
