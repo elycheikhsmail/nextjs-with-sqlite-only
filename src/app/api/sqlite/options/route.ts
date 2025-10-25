@@ -22,14 +22,7 @@ export async function GET(request: NextRequest) {
   }
 }
 
-export async function generateStaticParams() {
-  const params = [];
-  for (let i = 1; i <= 31; i++) {
-    params.push({ parentId: i.toString() });
-  }
-  return params;
-}
-
+ 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();

@@ -1,0 +1,353 @@
+[
+  {
+    "id": 1,
+    "name": "Vente",
+    "nameAr": "بيع",
+    "priority": 1,
+    "tag": "typeAnnonce",
+    "depth": 1,
+    "parentID": null
+  },
+  {
+    "id": 2,
+    "name": "Location",
+    "nameAr": "ايجار",
+    "priority": 1,
+    "tag": "typeAnnonce",
+    "depth": 1,
+    "parentID": null
+  },
+  {
+    "id": 3,
+    "name": "Service",
+    "nameAr": "خدمة",
+    "priority": 1,
+    "tag": "typeAnnonce",
+    "depth": 1,
+    "parentID": null
+  },
+  {
+    "id": 4,
+    "name": "autre",
+    "nameAr": "آخر",
+    "priority": 1,
+    "tag": "typeAnnonce",
+    "depth": 1,
+    "parentID": null
+  },
+  {
+    "id": 5,
+    "name": "tel, informatuque, multimedias",
+    "nameAr": "هواتف،معوماتية،ميلتي ميديا",
+    "priority": 1,
+    "tag": "categorie",
+    "depth": 2,
+    "parentID": 1
+  },
+  {
+    "id": 6,
+    "name": "Immobilier,maisons,appart",
+    "nameAr": "عقار،منازل،شقق",
+    "priority": 1,
+    "tag": "categorie",
+    "depth": 2,
+    "parentID": 1
+  },
+  {
+    "id": 7,
+    "name": "voitures,engins,motos",
+    "nameAr": "سيارات،آليات ثقيلة،دراجات",
+    "priority": 1,
+    "tag": "categorie",
+    "depth": 2,
+    "parentID": 1
+  },
+  {
+    "id": 8,
+    "name": "autre categorie",
+    "nameAr": "تصنيفات أخري",
+    "priority": 1,
+    "tag": "categorie",
+    "depth": 2,
+    "parentID": 1
+  },
+  {
+    "id": 9,
+    "name": "Immobilier,maisons,appart",
+    "nameAr": "العقارات ،المنازل، الشقق",
+    "priority": 1,
+    "tag": "",
+    "depth": 2,
+    "parentID": 2
+  },
+  {
+    "id": 10,
+    "name": "voitures,engins,motos",
+    "nameAr": "سيارات،آليات ثقيلة،دراجات",
+    "priority": 1,
+    "tag": "",
+    "depth": 2,
+    "parentID": 2
+  },
+  {
+    "id": 11,
+    "name": "autre categorie",
+    "nameAr": "تصنيفات أخري",
+    "priority": 1,
+    "tag": "",
+    "depth": 2,
+    "parentID": 2
+  },
+  {
+    "id": 12,
+    "name": "service de reparation",
+    "nameAr": "خدمة التصليح",
+    "priority": 1,
+    "tag": "",
+    "depth": 2,
+    "parentID": 3
+  },
+  {
+    "id": 13,
+    "name": "reparation des pannes electriaue",
+    "nameAr": "اصلاح اعطال الكهرباء",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 12
+  },
+  {
+    "id": 14,
+    "name": "reparation de la plomberie",
+    "nameAr": "اصلاح مشاكل شبكة الماء",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 12
+  },
+  {
+    "id": 15,
+    "name": "Service de nettoyage",
+    "nameAr": "خدمة التنظيف",
+    "priority": 1,
+    "tag": "",
+    "depth": 2,
+    "parentID": 3
+  },
+  {
+    "id": 16,
+    "name": "Service d'enseignement",
+    "nameAr": "خدمة التدريس",
+    "priority": 1,
+    "tag": "",
+    "depth": 2,
+    "parentID": 3
+  },
+  {
+    "id": 17,
+    "name": "autre services",
+    "nameAr": "خدمات اخري",
+    "priority": 1,
+    "tag": "",
+    "depth": 2,
+    "parentID": 3
+  },
+  {
+    "id": 18,
+    "name": "Appartement(s)",
+    "nameAr": "شقة او شقق",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 6
+  },
+  {
+    "id": 19,
+    "name": "Maison(s)",
+    "nameAr": "منزل او منازل",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 6
+  },
+  {
+    "id": 20,
+    "name": "Terrain(s)",
+    "nameAr": "قطعة او قطع ارضية",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 6
+  },
+  {
+    "id": 21,
+    "name": "autre sous categorie",
+    "nameAr": "تصنيفات فرعية اضافية",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 6
+  },
+  {
+    "id": 22,
+    "name": "telephone",
+    "nameAr": "هاتف",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 5
+  },
+  {
+    "id": 23,
+    "name": "ordinateur portable",
+    "nameAr": "كومبيوتر محمول",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 5
+  },
+  {
+    "id": 24,
+    "name": "autres sous categories",
+    "nameAr": "تصنيفات فرعية اخري",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 5
+  },
+  {
+    "id": 25,
+    "name": "voiture",
+    "nameAr": "سيارة",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 7
+  },
+  {
+    "id": 26,
+    "name": "camion",
+    "nameAr": "شاحنة",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 7
+  },
+  {
+    "id": 27,
+    "name": "citern",
+    "nameAr": "صهريج",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 7
+  },
+  {
+    "id": 28,
+    "name": "autres sous categories",
+    "nameAr": "تصنيفات فرعية اضافية",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 7
+  },
+  {
+    "id": 29,
+    "name": "maison",
+    "nameAr": "منزل",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 9
+  },
+  {
+    "id": 30,
+    "name": "maison meublée",
+    "nameAr": "منزل مفروش",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 9
+  },
+  {
+    "id": 31,
+    "name": "appartement",
+    "nameAr": "شقة",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 9
+  },
+  {
+    "id": 32,
+    "name": "appartement meublée",
+    "nameAr": "شقة مفروشة",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 9
+  },
+  {
+    "id": 33,
+    "name": "magasain",
+    "nameAr": "مخزن",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 9
+  },
+  {
+    "id": 34,
+    "name": "boutique",
+    "nameAr": "بوتيك(حانوت)",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 9
+  },
+  {
+    "id": 35,
+    "name": "voiture",
+    "nameAr": "سيارة",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 10
+  },
+  {
+    "id": 36,
+    "name": "engins, camion",
+    "nameAr": "آليات، شاحنات",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 10
+  },
+  {
+    "id": 37,
+    "name": "autres sous categorie",
+    "nameAr": "تصنيفات فرعية اضافية",
+    "priority": 1,
+    "tag": "",
+    "depth": 3,
+    "parentID": 10
+  },
+  {
+    "id": 38,
+    "name": "distribution d'eau",
+    "nameAr": "توزيع الماء",
+    "priority": 1,
+    "tag": "",
+    "depth": 2,
+    "parentID": 3
+  },
+  {
+    "id": 39,
+    "name": "demande",
+    "nameAr": "طلب",
+    "priority": 1,
+    "tag": "",
+    "depth": 1,
+    "parentID": null
+  }
+]
